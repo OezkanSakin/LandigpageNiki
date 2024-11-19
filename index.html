@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Feedback | Provinzial</title>
+    <!-- Verweis auf das CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="provenzial-logo.png" alt="Provinzial Logo" class="logo">
+        <h1>Willkommen bei der Provinzial</h1>
+        <p>Wie war Ihre Erfahrung? Bitte wählen Sie eine Option, um uns Feedback zu geben.</p>
+    
+        <!-- Buttons -->
+        <button class="primary" onclick="redirect()">Zufrieden</button>
+        <button class="secondary" onclick="sendFeedback()">Verbesserungswürdig</button>
+    
+        <!-- Alternative Feedback-Formular (standardmäßig versteckt) -->
+        <div id="feedback-form" style="display: none;">
+            <form id="feedbackForm" onsubmit="submitFeedback(event)">
+                <label for="feedback">Ihr Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Teilen Sie uns Ihre Verbesserungsvorschläge mit"></textarea><br><br>
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <!-- Verweis auf das JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
